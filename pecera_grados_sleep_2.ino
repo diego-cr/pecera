@@ -4,10 +4,10 @@
 CheapStepper stepper (8,9,10,11); 
 boolean moveClockwise = true;
 
-long siesta = 19; // horas a dormir
+long siesta = 17; // horas a dormir
 long siesta_seg = siesta * 450; // horas a segundos/8
 
-long siesta2 = 5; // horas a dormir
+long siesta2 = (24-siesta); // horas a dormir
 long siesta2_seg = siesta * 450; // horas a segundos/8
 
 int grados = 204.8;
@@ -20,8 +20,8 @@ void setup() {
    mueve(); // posicion 0 + grados
 
 //test!
-siesta_seg=1;
-siesta2_seg=2;
+//siesta_seg=1;
+//siesta2_seg=2;
 
 }
 
